@@ -24,8 +24,8 @@ In this paper, we propose CoTune, a tool that integrates a target performance re
 - Code\CoTune.py =>  The reproduction code of CoTune
 - Code\proposition.JSON => Different optional initial propositions for different systems at different percentages. The percentage refers to the proportion of non-zero numbers in this csvData set
 - Code\restart_sys => In order to test the data structure of different systems in different situations on a large scale
-- rawData => Experimental results
-- csvData => Datasets
+- rawData => rawData contains the experimental results of 4 RQs. The path of each RQ be like system/percent/NEW/experimental results, where percent refers to the ratio of the data mapped to non-zero satisfaction in the selected proposition to the proportion of the csv file, and different NEWs represent different propositions, although the percent is the same
+- csvData => Csv files of 9 systems
 - requirements.txt => Essential requirments need to be installed
 
 ## Quick Start
@@ -59,7 +59,7 @@ Note: We used two objective values for guidance. One is satisfaction, the other 
 
 - [SMAC](https://github.com/automl/SMAC3): a sequential model-based optimizer that handles categorical parameters by building a random forest to identify promising configurations in the algorithm configuration space.
 - [FLASH](https://github.com/FlashRepo/Flash-SingleConfig): a sequential model-based method for single-objective configuration optimization that leverages prior knowledge of the configuration space to choose the next configuration, reducing the number of measurements needed.
-- [HEBO](https://github.com/huawei-noah/HEBO): an automatic compiler tuning method based on bayesian optimization, which designs novel search strategies by approximating the objective function using a tree-based model.
+- [HEBO](https://github.com/huawei-noah/HEBO): a Bayesian optimization framework that uses a heteroscedastic Gaussian‐process surrogate combined with evolutionary search to efficiently tune hyperparameters on heteroscedastic, non‐stationary black‐box problems.
 
 Note: Like GA, the SOTA methods can also use two different bootstrapping methods. One is satisfaction, the other is original performance value.
 
