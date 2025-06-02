@@ -59,7 +59,7 @@ Note: We used two objective values for guidance. One is satisfaction, the other 
 
 - [SMAC](https://github.com/automl/SMAC3): a sequential model-based optimizer that handles categorical parameters by building a random forest to identify promising configurations in the algorithm configuration space.
 - [FLASH](https://github.com/FlashRepo/Flash-SingleConfig): a sequential model-based method for single-objective configuration optimization that leverages prior knowledge of the configuration space to choose the next configuration, reducing the number of measurements needed.
-- [BOCA](https://github.com/BOCA313/BOCA): an automatic compiler tuning method based on bayesian optimization, which designs novel search strategies by approximating the objective function using a tree-based model.
+- [HEBO](https://github.com/huawei-noah/HEBO): an automatic compiler tuning method based on bayesian optimization, which designs novel search strategies by approximating the objective function using a tree-based model.
 
 Note: Like GA, the SOTA methods can also use two different bootstrapping methods. One is satisfaction, the other is original performance value.
 
