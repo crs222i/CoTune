@@ -83,4 +83,4 @@ Note: Like GA, the SOTA methods can also use two different bootstrapping methods
 
 ## RQ Supplementary
 
-RQ_supplementary contains the specific supplementary files for RQ3.
+rqSupplementary contains the specific supplementary files for RQ3.
