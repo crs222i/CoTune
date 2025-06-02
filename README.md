@@ -7,17 +7,17 @@ To automatically tune configurations for the best possible system performance (e
 In this paper, we propose CoTune, a tool that integrates a target performance requirement via co-evolution. CoTune’s core idea is to co-evolve an auxiliary requirement alongside the configurations. When the main requirement becomes ineffective or misleading, the auxiliary requirement intervenes to guide the search, ensuring that tuning remains both requirement-driven and robust against harmful effects.
 ## Systems 
 
-| System      | Benchmark             | Domain            | Lang.   | Perf. Metric       | `|B|/|N|` | S_space        |
-|-------------|-----------------------|-------------------|---------|--------------------|-----------|----------------|
-| 7z          | A 3 GB directory      | File Compressor   | C++     | Runtime (ms)       | 11/3      | 4.39×10⁵       |
-| KANZI       | Default benchmark     | File Compressor   | Java    | Runtime (ms)       | 31/0      | 5.36×10⁸       |
-| ExaStencils | Default benchmark     | Code Generator    | Scala   | Runtime (ms)       | 7/5       | 6.55×10⁸       |
-| Apache      | Web server benchmark  | Web Server        | C       | Throughput (req/s) | 14/2      | 3.28×10⁴       |
-| SQLite      | Default benchmark     | Database Engine   | Various | Latency (ms)       | 39/0      | 5.50×10¹¹      |
-| DConvert    | Default images        | Image Scaling     | Java    | Runtime (s)        | 17/1      | 2.62×10⁵       |
-| DeepArch    | UCR Archive dataset   | AI Tool           | Python  | Runtime (min)      | 12/0      | 4.10×10³       |
-| Jump3r      | Jump3r codebase       | Static Analysis   | Java    | Runtime (ms)       | 37/0      | 6.87×10¹⁰      |
-| HSMGP       | V-cycle solver bench  | Multigrid Solver  | C++     | Runtime (ms)       | 11/3      | 1.00×10⁵       |
+| System      | Benchmark            | Domain           | Lang.   | Perf. Metric       | \|B\|/\|N\| | S_space     |
+| ----------- | -------------------- | ---------------- | ------- | ------------------ | ----------- | ----------- |
+| 7z          | A 3 GB directory     | File Compressor  | C++     | Runtime (ms)       | 11 / 3      | 4.39 × 10⁵  |
+| Kanzi       | Default benchmark    | Code Generator   | Scala   | Runtime (ms)       | 31 / 0      | 5.36 × 10⁸  |
+| ExaStencils | Default benchmark    | Code Generator   | Scala   | Runtime (ms)       | 7 / 5       | 6.55 × 10⁸  |
+| Apache      | Web server benchmark | Web Server       | C       | Throughput (req/s) | 14 / 2      | 3.28 × 10⁴  |
+| SQLite      | Default benchmark    | Database Engine  | Various | Latency (ms)       | 39 / 0      | 5.50 × 10¹¹ |
+| DConvert    | Default images       | Image Scaling    | Java    | Runtime (s)        | 17 / 1      | 2.62 × 10⁵  |
+| DeepArch    | UCR Archive dataset  | AI Tool          | Python  | Runtime (min)      | 12 / 0      | 4.10 × 10³  |
+| Jump3r      | Jump3r codebase      | Static Analysis  | Java    | Runtime (ms)       | 37 / 0      | 6.87 × 10¹⁰ |
+| HSMGP       | V-cycle solver bench | Multigrid Solver | C++     | Runtime (ms)       | 11 / 3      | 1.00 × 10⁵  |
 
 ## Structure
 
